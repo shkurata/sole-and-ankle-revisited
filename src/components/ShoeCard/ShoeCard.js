@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { COLORS } from "../../constants";
 import { formatPrice, pluralize, isNewShoe } from "../../utils";
 import Spacer from "../Spacer";
 
@@ -44,7 +43,8 @@ const ShoeCard = ({
           <Name>{name}</Name>
           <Price
             style={{
-              "--color": variant === "on-sale" ? COLORS.gray[700] : undefined,
+              "--color":
+                variant === "on-sale" ? "var(--color-gray-700)" : undefined,
               "--text-decoration":
                 variant === "on-sale" ? "line-through" : undefined,
             }}

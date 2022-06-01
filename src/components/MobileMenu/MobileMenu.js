@@ -78,7 +78,7 @@ const NavigationFooter = styled.footer`
 `;
 
 const Overlay = styled(DialogOverlay)`
-  background: hsla(220deg 5% 40% / 0.8);
+  background: var(--color-backdrop);
   bottom: 0;
   display: flex;
   justify-content: flex-end;
